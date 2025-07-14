@@ -9,7 +9,7 @@
     // Value: YOUR_WEBFLOW_API_TOKEN (the one you generated in Webflow)
 
     // --- IMPORTANT: Replace with your actual Webflow Hobbies Collection ID ---
-    const WEBFLOW_COLLECTION_ID = 'YOUR_WEBFLOW_HOBBIES_COLLECTION_ID'; // <<< REPLACE THIS
+    const WEBFLOW_COLLECTION_ID = '68749d179596d5c6c446db80'; // <<< REPLACE THIS
 
     export default async function (req, res) {
       // Set CORS headers for your Webflow domain
