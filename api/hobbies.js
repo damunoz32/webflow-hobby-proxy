@@ -41,7 +41,7 @@
       }
 
       try {
-        const apiUrl = `https://api.webflow.com/collections/${WEBFLOW_COLLECTION_ID}/items?live=true`;
+        const apiUrl = `https://api.webflow.com/v2/collections/${WEBFLOW_COLLECTION_ID}`;
 
         const webflowResponse = await fetch(apiUrl, {
           method: 'GET',
