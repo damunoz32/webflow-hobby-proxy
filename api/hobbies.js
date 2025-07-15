@@ -1,15 +1,8 @@
     // api/hobbies.js
     // This is a simple Vercel Serverless Function that acts as a proxy
     // to fetch data from the Webflow CMS API and bypass CORS issues.
-
-    // --- IMPORTANT: Store your Webflow API Token as an Environment Variable in Vercel ---
-    // DO NOT hardcode your API token here.
-    // In Vercel Project Settings -> Environment Variables, add:
-    // Name: WEBFLOW_API_TOKEN
-    // Value: YOUR_WEBFLOW_API_TOKEN (the one you generated in Webflow)
-
-    // --- IMPORTANT: Replace with your actual Webflow Hobbies Collection ID ---
-    const WEBFLOW_COLLECTION_ID = '68749d179596d5c6c446db80'; // <<< REPLACE THIS
+  
+    const WEBFLOW_COLLECTION_ID = '68749d179596d5c6c446db80';
 
     export default async function (req, res) {
       // Set CORS headers for your Webflow domain
@@ -26,7 +19,7 @@
         return;
       }
 
-      // Ensure it's a GET request
+      
       if (req.method !== 'GET') {
         res.status(405).json({ error: 'Method Not Allowed' });
         return;
