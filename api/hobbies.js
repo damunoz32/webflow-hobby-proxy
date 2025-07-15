@@ -2,7 +2,7 @@
 
 module.exports = async (req, res) => {
     
-    res.setHeader('Access-Control-Allow-Origin', 'https://webflow-portfolio-site---project.webflow.io');
+    res.setHeader('Access-Control-Allow-Origin', 'https://dantemunoz.webflow.io');
     res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
