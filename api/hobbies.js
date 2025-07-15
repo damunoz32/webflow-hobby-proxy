@@ -17,7 +17,7 @@ module.exports = async (req, res) => {
         return res.status(405).json({ error: 'Method Not Allowed. Only GET requests are accepted.' });
     }
 
-    // Grab the API key and Collection ID from Vercel
+    // Grab the API key and Collection ID from Vercel.
     const WEBFLOW_API_TOKEN = process.env.WEBFLOW_API_TOKEN;
     const WEBFLOW_COLLECTION_ID = process.env.WEBFLOW_COLLECTION_ID; 
 
