@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
     // Set CORS headers to allow requests from your Webflow domain
     // IMPORTANT: Replace 'https://webflow-portfolio-site---project.webflow.io' with your actual Webflow domain
     // For local testing, you might need to add 'http://localhost:3000' or '*' temporarily,
-    // but always restrict it to your specific domain(s) for production.
+    // but always restrict it to your specific domain(s) for production
     res.setHeader('Access-Control-Allow-Origin', 'https://webflow-portfolio-site---project.webflow.io');
     res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
